@@ -818,7 +818,7 @@ class Giveaway extends EventEmitter {
                                     : undefined,
                             failIfNotExists: false
                         }
-                    });
+                    }).then(msg => msg.react('👏'));
                 }
                 resolve(winners);
             } else {
@@ -1007,7 +1007,7 @@ class Giveaway extends EventEmitter {
                                     : undefined,
                             failIfNotExists: false
                         }
-                    });
+                    }).then((msg) => msg.react('👏'));
                 }
                 resolve(winners);
             } else {
